@@ -1,0 +1,78 @@
+{
+    "Diviner's Delirium Orb": {
+        "price": 28.0,
+        "bulk_price": 30.9
+    },
+    "Skittering Delirium Orb": {
+        "price": 20.0,
+        "bulk_price": 22.6
+    },
+    "Fine Delirium Orb": {
+        "price": 14.0,
+        "bulk_price": 16.0
+    },
+    "Cartographer's Delirium Orb": {
+        "price": 8.0,
+        "bulk_price": 24.9
+    },
+    "Singular Delirium Orb": {
+        "price": 9.0,
+        "bulk_price": 25.333333333333332
+    },
+    "Whispering Delirium Orb": {
+        "price": 8.0,
+        "bulk_price": 18.77777777777778
+    },
+    "Abyssal Delirium Orb": {
+        "price": 8.0,
+        "bulk_price": 30.666666666666668
+    },
+    "Amorphous Delirium Orb": {
+        "price": 9.0,
+        "bulk_price": 57.0
+    },
+    "Blighted Delirium Orb": {
+        "price": 8.0,
+        "bulk_price": 30.333333333333332
+    },
+    "Foreboding Delirium Orb": {
+        "price": 8.8,
+        "bulk_price": 29.188888888888886
+    },
+    "Fossilised Delirium Orb": {
+        "price": 8.0,
+        "bulk_price": 40.67142857142857
+    },
+    "Fragmented Delirium Orb": {
+        "price": 8.0,
+        "bulk_price": 48.4
+    },
+    "Obscured Delirium Orb": {
+        "price": 9.0,
+        "bulk_price": 20.93333333333333
+    },
+    "Thaumaturge's Delirium Orb": {
+        "price": 9.0,
+        "bulk_price": 45.4
+    },
+    "Timeless Delirium Orb": {
+        "price": 9.0,
+        "bulk_price": 28.0
+    },
+    "Imperial Delirium Orb": {
+        "price": 9.0,
+        "bulk_price": 19.0
+    },
+    "Armoursmith's Delirium Orb": {
+        "price": 8.0,
+        "bulk_price": 25.77777777777778
+    },
+    "Blacksmith's Delirium Orb": {
+        "price": 7.0,
+        "bulk_price": 18.444444444444443
+    },
+    "Jeweller's Delirium Orb": {
+        "price": 8.0,
+        "bulk_price": 38.0
+    }
+}
