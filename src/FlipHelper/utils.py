@@ -4,16 +4,18 @@ import os
 from settings import POE_SESSION_ID, USER_AGENT, LEAGUE
 
 __CURRENT_DIR__, _ = os.path.split(__file__)
-__DATA_PATH__ = os.path.join(__CURRENT_DIR__, "")
-__PRICES_PATH__ = os.path.join(__CURRENT_DIR__, "price_info")
+__CURRENT_PATH__ = os.path.join(__CURRENT_DIR__, "")
+__PRICES_PATH__ = os.path.join(__CURRENT_PATH__, "price_info")
 
 def load_json(json_file_path: str, base_path=__PRICES_PATH__):
-    file_path = base_path + f"{json_file_path}"
+    file_path = os.path.join(base_path, json_file_path)
     with open(file_path) as json_data:
         try:
             return json.load(json_data)
         except json.decoder.JSONDecodeError:
             print(f"Warning: {json_file_path} failed to decode json")
+
+deli_orbs = load_json("deli_orbs.json")
 
 def update_json(data: dict, json_file: str, base_path=__PRICES_PATH__):
     path = os.path.join(__PRICES_PATH__, json_file)
@@ -37,7 +39,7 @@ def generate_query(item_list: list, stacksize=10) -> list:
 def poetrade_query(query: str) -> tuple:
     trade_url = "https://www.pathofexile.com/api/trade/search/Sanctum"
     headers = {"POESESSID": POE_SESSION_ID, "user-agent": USER_AGENT}
-    response = requests.post(trade_url, headers=headers, json=query, verify=False)
+    response = requests.post(trade_url, headers=headers, json=query)
     parsed = json.loads(response.content)
 
     query_id = parsed["id"]
