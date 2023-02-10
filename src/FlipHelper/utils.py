@@ -16,19 +16,25 @@ def load_json(json_file_path: str, base_path=__PRICES_PATH__):
             print(f"Warning: {json_file_path} failed to decode json")
 
 def update_json(data: dict, json_file: str, base_path=__PRICES_PATH__):
-    path = os.path.join(__PRICES_PATH__, json_file)
+    path = os.path.join(base_path, json_file)
     with open(path, "w") as outfile:
         json.dump(data, outfile, indent=4)
 
 def get_ninja_prices(item_type: str) -> dict:
+    if item_type == "Currency": overview_type = "currency"
+    else: overview_type = "item"
     prices = {}
-    ninja_url_template = "https://poe.ninja/api/data/itemoverview?league={}&type={}&language=en".format(LEAGUE, item_type)
+    ninja_url_template = "https://poe.ninja/api/data/{}overview?league={}&type={}&language=en".format(overview_type, LEAGUE, item_type)
     response = json.loads(requests.get(ninja_url_template).content)
-    for item in response["lines"]:
-        prices[item["name"]] = round(item["chaosValue"], 1)
+    if overview_type == "currency":
+        for item in response["lines"]:
+            prices[item["currencyTypeName"]] = round(item["chaosEquivalent"], 1)
+    else:
+        for item in response["lines"]:
+            prices[item["name"]] = round(item["chaosValue"], 1)
     return prices
 
-def generate_query(item_list: list, stacksize=10) -> list:
+def generate_query(item_list: list, stacksize) -> list:
     query_list = []
     for item in item_list:
         query_list.append({"query":{"status":{"option":"online"},"type":item,"stats":[{"type":"and","filters":[]}],"filters":{"misc_filters":{"filters":{"stack_size":{"min":stacksize}}}}},"sort":{"price":"asc"}})
