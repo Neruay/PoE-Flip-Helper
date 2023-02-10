@@ -1,13 +1,14 @@
 from utils import *
 from utils import __CURRENT_PATH__
 from price_info import *
+from settings import BULK_SIZE
 import time
 
 deli_orbs = load_json("deli_orbs.json")
 essences = load_json("essences.json")
 fossils = load_json("fossils.json")
 
-item_types = ["fossils", "deli_orbs", "essences"]
+item_types = ["fossils"]#, "deli_orbs", "essences"]
 
 for item_type in item_types:
     json_to_update = ""
@@ -37,7 +38,7 @@ for item_type in item_types:
             current_json[item[0]] = {"price": 0, "bulk_price": 0}
         current_json[item[0]]["price"] = item[1]
 
-    quaries = generate_query(current_json.keys())
+    quaries = generate_query(current_json.keys(), stacksize=BULK_SIZE)
     poetrade_items = []
     proxy_list = load_json("proxy_list.json", __CURRENT_PATH__)
     cnt = 1
@@ -45,7 +46,7 @@ for item_type in item_types:
     for quary in quaries:
         print("|{}/{}| Checking {} bulk price at @pathofexile.com/trade".format(cnt, len(quaries), quary["query"]["type"]))
         poetrade_items.append(poetrade_query(quary, proxy=proxy_list[proxy_cnt]))
-        time.sleep(2)
+        time.sleep(10)
         cnt += 1
         if proxy_cnt == (len(proxy_list)-1): proxy_cnt = 0
         else: proxy_cnt += 1
