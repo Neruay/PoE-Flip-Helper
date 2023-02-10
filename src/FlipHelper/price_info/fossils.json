@@ -1,0 +1,102 @@
+{
+    "Faceted Fossil": {
+        "price": 84.0,
+        "bulk_price": 120.0
+    },
+    "Glyphic Fossil": {
+        "price": 78.0,
+        "bulk_price": 0.8
+    },
+    "Fractured Fossil": {
+        "price": 33.3,
+        "bulk_price": 41.5
+    },
+    "Hollow Fossil": {
+        "price": 10.0,
+        "bulk_price": 334.0
+    },
+    "Sanctified Fossil": {
+        "price": 8.0,
+        "bulk_price": 32.4
+    },
+    "Perfect Fossil": {
+        "price": 5.7,
+        "bulk_price": 9.1
+    },
+    "Shuddering Fossil": {
+        "price": 5.0,
+        "bulk_price": 7.3
+    },
+    "Corroded Fossil": {
+        "price": 4.0,
+        "bulk_price": 4.8
+    },
+    "Prismatic Fossil": {
+        "price": 3.0,
+        "bulk_price": 2.6
+    },
+    "Serrated Fossil": {
+        "price": 3.0,
+        "bulk_price": 4.1
+    },
+    "Deft Fossil": {
+        "price": 3.0,
+        "bulk_price": 5.7
+    },
+    "Fundamental Fossil": {
+        "price": 3.0,
+        "bulk_price": 3.8
+    },
+    "Aetheric Fossil": {
+        "price": 2.0,
+        "bulk_price": 2.7
+    },
+    "Bound Fossil": {
+        "price": 2.4,
+        "bulk_price": 2.8
+    },
+    "Bloodstained Fossil": {
+        "price": 2.0,
+        "bulk_price": 3.9
+    },
+    "Dense Fossil": {
+        "price": 1.0,
+        "bulk_price": 1.5
+    },
+    "Gilded Fossil": {
+        "price": 1.0,
+        "bulk_price": 2.7
+    },
+    "Jagged Fossil": {
+        "price": 1.0,
+        "bulk_price": 1.0
+    },
+    "Aberrant Fossil": {
+        "price": 1.0,
+        "bulk_price": 1.0
+    },
+    "Metallic Fossil": {
+        "price": 1.0,
+        "bulk_price": 0.7
+    },
+    "Pristine Fossil": {
+        "price": 1.0,
+        "bulk_price": 1.0
+    },
+    "Lucent Fossil": {
+        "price": 1.0,
+        "bulk_price": 1.0
+    },
+    "Tangled Fossil": {
+        "price": 1.0,
+        "bulk_price": 4.6
+    },
+    "Scorched Fossil": {
+        "price": 1.0,
+        "bulk_price": 0.5
+    },
+    "Frigid Fossil": {
+        "price": 0.3,
+        "bulk_price": 0.5
+    }
+}

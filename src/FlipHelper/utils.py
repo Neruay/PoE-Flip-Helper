@@ -15,8 +15,6 @@ def load_json(json_file_path: str, base_path=__PRICES_PATH__):
         except json.decoder.JSONDecodeError:
             print(f"Warning: {json_file_path} failed to decode json")
 
-deli_orbs = load_json("deli_orbs.json")
-
 def update_json(data: dict, json_file: str, base_path=__PRICES_PATH__):
     path = os.path.join(__PRICES_PATH__, json_file)
     with open(path, "w") as outfile:
@@ -36,10 +34,10 @@ def generate_query(item_list: list, stacksize=10) -> list:
         query_list.append({"query":{"status":{"option":"online"},"type":item,"stats":[{"type":"and","filters":[]}],"filters":{"misc_filters":{"filters":{"stack_size":{"min":stacksize}}}}},"sort":{"price":"asc"}})
     return query_list
 
-def poetrade_query(query: str) -> tuple:
+def poetrade_query(query: str, proxy: dict) -> tuple:
     trade_url = "https://www.pathofexile.com/api/trade/search/Sanctum"
     headers = {"POESESSID": POE_SESSION_ID, "user-agent": USER_AGENT}
-    response = requests.post(trade_url, headers=headers, json=query)
+    response = requests.post(trade_url, headers=headers, json=query, proxies=proxy)
     parsed = json.loads(response.content)
 
     query_id = parsed["id"]
@@ -49,7 +47,7 @@ def poetrade_query(query: str) -> tuple:
     for item in items:
         item_id_list += item + ","
     item_id_list = item_id_list[:-1]
-    fetched_items = requests.get("https://www.pathofexile.com/api/trade/fetch/{}?query={}".format(item_id_list, query_id), headers=headers)
+    fetched_items = requests.get("https://www.pathofexile.com/api/trade/fetch/{}?query={}".format(item_id_list, query_id), headers=headers, proxies=proxy)
     parsed_items = json.loads(fetched_items.content)
     parsed_items = parsed_items["result"]
     prices = []
