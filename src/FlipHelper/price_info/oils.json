@@ -1,0 +1,62 @@
+{
+    "Tainted Oil": {
+        "price": 66.9,
+        "bulk_price": 0
+    },
+    "Golden Oil": {
+        "price": 60.8,
+        "bulk_price": 0
+    },
+    "Silver Oil": {
+        "price": 28.0,
+        "bulk_price": 0
+    },
+    "Opalescent Oil": {
+        "price": 8.6,
+        "bulk_price": 0
+    },
+    "Black Oil": {
+        "price": 2.8,
+        "bulk_price": 0
+    },
+    "Crimson Oil": {
+        "price": 2.2,
+        "bulk_price": 0
+    },
+    "Violet Oil": {
+        "price": 1.0,
+        "bulk_price": 0
+    },
+    "Reflective Oil": {
+        "price": 1.0,
+        "bulk_price": 0
+    },
+    "Azure Oil": {
+        "price": 0.3,
+        "bulk_price": 0
+    },
+    "Indigo Oil": {
+        "price": 0.3,
+        "bulk_price": 0
+    },
+    "Teal Oil": {
+        "price": 0.2,
+        "bulk_price": 0
+    },
+    "Verdant Oil": {
+        "price": 0.1,
+        "bulk_price": 0
+    },
+    "Amber Oil": {
+        "price": 0.1,
+        "bulk_price": 0
+    },
+    "Sepia Oil": {
+        "price": 0.1,
+        "bulk_price": 0
+    },
+    "Clear Oil": {
+        "price": 0.1,
+        "bulk_price": 0
+    }
+}

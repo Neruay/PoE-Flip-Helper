@@ -21,7 +21,7 @@ def update_json(data: dict, json_file: str, base_path=__PRICES_PATH__):
         json.dump(data, outfile, indent=4)
 
 def get_ninja_prices(item_type: str) -> dict:
-    if item_type == "Currency": overview_type = "currency"
+    if item_type == "Currency" or item_type == "Catalyst": overview_type = "currency"
     else: overview_type = "item"
     prices = {}
     ninja_url_template = "https://poe.ninja/api/data/{}overview?league={}&type={}&language=en".format(overview_type, LEAGUE, item_type)
@@ -66,3 +66,14 @@ def poetrade_query(query: dict, proxy: dict) -> tuple:
             median = sum(prices)/len(prices)
         return (parsed_items[0]["item"]["baseType"], round(median, 1), prices)
     return (query["query"]["type"], -1, [-1])
+
+def parse_catalysts_from_currency():
+    currency = load_json("currency.json")
+    entries = currency.keys()
+    catalysts = {}
+    for entry in entries:
+        if "Catalyst" in entry:
+            catalysts[entry] = {"price": currency[entry]["price"], "bulk_price": 0}
+    update_json(catalysts, "catalysts.json")
+
+parse_catalysts_from_currency()

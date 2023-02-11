@@ -1,0 +1,258 @@
+{
+    "Winged Divination Scarab": {
+        "price": 37.1,
+        "bulk_price": 0
+    },
+    "Winged Ambush Scarab": {
+        "price": 37.1,
+        "bulk_price": 0
+    },
+    "Winged Reliquary Scarab": {
+        "price": 35.8,
+        "bulk_price": 0
+    },
+    "Winged Harbinger Scarab": {
+        "price": 34.7,
+        "bulk_price": 0
+    },
+    "Winged Breach Scarab": {
+        "price": 28.9,
+        "bulk_price": 0
+    },
+    "Winged Abyss Scarab": {
+        "price": 28.9,
+        "bulk_price": 0
+    },
+    "Winged Bestiary Scarab": {
+        "price": 27.7,
+        "bulk_price": 0
+    },
+    "Winged Cartography Scarab": {
+        "price": 27.1,
+        "bulk_price": 0
+    },
+    "Winged Expedition Scarab": {
+        "price": 25.0,
+        "bulk_price": 0
+    },
+    "Winged Blight Scarab": {
+        "price": 24.9,
+        "bulk_price": 0
+    },
+    "Winged Metamorph Scarab": {
+        "price": 24.8,
+        "bulk_price": 0
+    },
+    "Winged Torment Scarab": {
+        "price": 24.4,
+        "bulk_price": 0
+    },
+    "Winged Legion Scarab": {
+        "price": 24.0,
+        "bulk_price": 0
+    },
+    "Winged Shaper Scarab": {
+        "price": 23.0,
+        "bulk_price": 0
+    },
+    "Winged Elder Scarab": {
+        "price": 23.0,
+        "bulk_price": 0
+    },
+    "Winged Sulphite Scarab": {
+        "price": 22.0,
+        "bulk_price": 0
+    },
+    "Gilded Divination Scarab": {
+        "price": 11.8,
+        "bulk_price": 0
+    },
+    "Gilded Ambush Scarab": {
+        "price": 9.6,
+        "bulk_price": 0
+    },
+    "Gilded Harbinger Scarab": {
+        "price": 8.7,
+        "bulk_price": 0
+    },
+    "Gilded Reliquary Scarab": {
+        "price": 8.3,
+        "bulk_price": 0
+    },
+    "Gilded Legion Scarab": {
+        "price": 6.0,
+        "bulk_price": 0
+    },
+    "Gilded Metamorph Scarab": {
+        "price": 5.5,
+        "bulk_price": 0
+    },
+    "Gilded Cartography Scarab": {
+        "price": 5.5,
+        "bulk_price": 0
+    },
+    "Gilded Blight Scarab": {
+        "price": 5.4,
+        "bulk_price": 0
+    },
+    "Gilded Expedition Scarab": {
+        "price": 5.3,
+        "bulk_price": 0
+    },
+    "Gilded Breach Scarab": {
+        "price": 5.0,
+        "bulk_price": 0
+    },
+    "Gilded Shaper Scarab": {
+        "price": 5.0,
+        "bulk_price": 0
+    },
+    "Gilded Bestiary Scarab": {
+        "price": 5.0,
+        "bulk_price": 0
+    },
+    "Gilded Sulphite Scarab": {
+        "price": 5.0,
+        "bulk_price": 0
+    },
+    "Gilded Elder Scarab": {
+        "price": 5.0,
+        "bulk_price": 0
+    },
+    "Polished Divination Scarab": {
+        "price": 5.0,
+        "bulk_price": 0
+    },
+    "Gilded Abyss Scarab": {
+        "price": 5.0,
+        "bulk_price": 0
+    },
+    "Polished Harbinger Scarab": {
+        "price": 4.8,
+        "bulk_price": 0
+    },
+    "Gilded Torment Scarab": {
+        "price": 4.3,
+        "bulk_price": 0
+    },
+    "Polished Ambush Scarab": {
+        "price": 4.1,
+        "bulk_price": 0
+    },
+    "Polished Legion Scarab": {
+        "price": 3.0,
+        "bulk_price": 0
+    },
+    "Polished Cartography Scarab": {
+        "price": 3.0,
+        "bulk_price": 0
+    },
+    "Polished Reliquary Scarab": {
+        "price": 2.5,
+        "bulk_price": 0
+    },
+    "Polished Expedition Scarab": {
+        "price": 2.2,
+        "bulk_price": 0
+    },
+    "Polished Shaper Scarab": {
+        "price": 2.0,
+        "bulk_price": 0
+    },
+    "Polished Sulphite Scarab": {
+        "price": 2.0,
+        "bulk_price": 0
+    },
+    "Polished Breach Scarab": {
+        "price": 2.0,
+        "bulk_price": 0
+    },
+    "Polished Torment Scarab": {
+        "price": 2.0,
+        "bulk_price": 0
+    },
+    "Polished Elder Scarab": {
+        "price": 2.0,
+        "bulk_price": 0
+    },
+    "Polished Bestiary Scarab": {
+        "price": 2.0,
+        "bulk_price": 0
+    },
+    "Polished Metamorph Scarab": {
+        "price": 2.0,
+        "bulk_price": 0
+    },
+    "Polished Abyss Scarab": {
+        "price": 2.0,
+        "bulk_price": 0
+    },
+    "Polished Blight Scarab": {
+        "price": 2.0,
+        "bulk_price": 0
+    },
+    "Rusted Divination Scarab": {
+        "price": 1.9,
+        "bulk_price": 0
+    },
+    "Rusted Cartography Scarab": {
+        "price": 1.0,
+        "bulk_price": 0
+    },
+    "Rusted Elder Scarab": {
+        "price": 1.0,
+        "bulk_price": 0
+    },
+    "Rusted Ambush Scarab": {
+        "price": 1.0,
+        "bulk_price": 0
+    },
+    "Rusted Harbinger Scarab": {
+        "price": 1.0,
+        "bulk_price": 0
+    },
+    "Rusted Legion Scarab": {
+        "price": 1.0,
+        "bulk_price": 0
+    },
+    "Rusted Sulphite Scarab": {
+        "price": 1.0,
+        "bulk_price": 0
+    },
+    "Rusted Expedition Scarab": {
+        "price": 0.8,
+        "bulk_price": 0
+    },
+    "Rusted Blight Scarab": {
+        "price": 0.8,
+        "bulk_price": 0
+    },
+    "Rusted Reliquary Scarab": {
+        "price": 0.8,
+        "bulk_price": 0
+    },
+    "Rusted Shaper Scarab": {
+        "price": 0.7,
+        "bulk_price": 0
+    },
+    "Rusted Bestiary Scarab": {
+        "price": 0.7,
+        "bulk_price": 0
+    },
+    "Rusted Torment Scarab": {
+        "price": 0.7,
+        "bulk_price": 0
+    },
+    "Rusted Breach Scarab": {
+        "price": 0.7,
+        "bulk_price": 0
+    },
+    "Rusted Metamorph Scarab": {
+        "price": 0.7,
+        "bulk_price": 0
+    },
+    "Rusted Abyss Scarab": {
+        "price": 0.7,
+        "bulk_price": 0
+    }
+}

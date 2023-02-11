@@ -1,0 +1,42 @@
+{
+    "Prismatic Catalyst": {
+        "price": 11.8,
+        "bulk_price": 0
+    },
+    "Unstable Catalyst": {
+        "price": 11.0,
+        "bulk_price": 0
+    },
+    "Fertile Catalyst": {
+        "price": 5.0,
+        "bulk_price": 0
+    },
+    "Accelerating Catalyst": {
+        "price": 3.0,
+        "bulk_price": 0
+    },
+    "Tempering Catalyst": {
+        "price": 1.0,
+        "bulk_price": 0
+    },
+    "Intrinsic Catalyst": {
+        "price": 0.7,
+        "bulk_price": 0
+    },
+    "Noxious Catalyst": {
+        "price": 0.7,
+        "bulk_price": 0
+    },
+    "Turbulent Catalyst": {
+        "price": 0.5,
+        "bulk_price": 0
+    },
+    "Abrasive Catalyst": {
+        "price": 0.3,
+        "bulk_price": 0
+    },
+    "Imbued Catalyst": {
+        "price": 0.3,
+        "bulk_price": 0
+    }
+}
