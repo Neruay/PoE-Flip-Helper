@@ -1,78 +1,116 @@
 {
     "Diviner's Delirium Orb": {
-        "price": 30.0,
-        "bulk_price": 31.6
+        "price": 28.0,
+        "bulk_price": 31.4,
+        "weight": 0.04708707738333333,
+        "roll_keep": true
     },
     "Skittering Delirium Orb": {
-        "price": 21.0,
-        "bulk_price": 22.6
+        "price": 21.8,
+        "bulk_price": 22.9,
+        "weight": 0.033475934766666667,
+        "roll_keep": true
     },
     "Fine Delirium Orb": {
-        "price": 14.0,
-        "bulk_price": 16.0
+        "price": 15.0,
+        "bulk_price": 15.2,
+        "weight": 0.10657198716666667,
+        "roll_keep": true
     },
     "Cartographer's Delirium Orb": {
         "price": 8.0,
-        "bulk_price": 24.9
+        "bulk_price": 27.5,
+        "weight": 0.036860231599999994,
+        "roll_keep": false
     },
     "Singular Delirium Orb": {
-        "price": 9.0,
-        "bulk_price": 25.333333333333332
+        "price": 8.0,
+        "bulk_price": 5.8,
+        "weight": 0.019826504916666668,
+        "roll_keep": false
     },
     "Whispering Delirium Orb": {
-        "price": 9.0,
-        "bulk_price": 18.77777777777778
+        "price": 7.2,
+        "bulk_price": 28.1,
+        "weight": 0.06617285425,
+        "roll_keep": false
     },
     "Abyssal Delirium Orb": {
-        "price": 8.6,
-        "bulk_price": 30.666666666666668
+        "price": 7.0,
+        "bulk_price": 21.8,
+        "weight": 0.034463568775,
+        "roll_keep": false
     },
     "Amorphous Delirium Orb": {
         "price": 8.0,
-        "bulk_price": 57.0
+        "bulk_price": 22.0,
+        "weight": 0.037372311241666664,
+        "roll_keep": false
     },
     "Blighted Delirium Orb": {
-        "price": 8.0,
-        "bulk_price": 30.333333333333332
+        "price": 7.0,
+        "bulk_price": 33.5,
+        "weight": 0.033600234433333334,
+        "roll_keep": false
     },
     "Foreboding Delirium Orb": {
-        "price": 9.0,
-        "bulk_price": 29.188888888888886
+        "price": 7.8,
+        "bulk_price": 24.7,
+        "weight": 0.04961202054166667,
+        "roll_keep": false
     },
     "Fossilised Delirium Orb": {
-        "price": 8.0,
-        "bulk_price": 40.67142857142857
+        "price": 7.0,
+        "bulk_price": 18.3,
+        "weight": 0.03128555441666667,
+        "roll_keep": false
     },
     "Fragmented Delirium Orb": {
-        "price": 8.0,
-        "bulk_price": 48.4
+        "price": 7.0,
+        "bulk_price": 19.8,
+        "weight": 0.030150379691666666,
+        "roll_keep": false
     },
     "Obscured Delirium Orb": {
-        "price": 9.0,
-        "bulk_price": 20.93333333333333
+        "price": 7.0,
+        "bulk_price": 13.7,
+        "weight": 0.031453138358333334,
+        "roll_keep": false
     },
     "Thaumaturge's Delirium Orb": {
-        "price": 9.0,
-        "bulk_price": 45.4
+        "price": 7.0,
+        "bulk_price": 19.3,
+        "weight": 0.03145576939166667,
+        "roll_keep": false
     },
     "Timeless Delirium Orb": {
-        "price": 9.0,
-        "bulk_price": 28.0
+        "price": 8.0,
+        "bulk_price": 22.0,
+        "weight": 0.03646608191666667,
+        "roll_keep": false
     },
     "Imperial Delirium Orb": {
-        "price": 9.0,
-        "bulk_price": 19.0
+        "price": 6.0,
+        "bulk_price": 16.6,
+        "weight": 0.05654902766666667,
+        "roll_keep": false
     },
     "Armoursmith's Delirium Orb": {
-        "price": 8.0,
-        "bulk_price": 25.77777777777778
+        "price": 7.0,
+        "bulk_price": 30.7,
+        "weight": 0.12355833933333332,
+        "roll_keep": false
     },
     "Blacksmith's Delirium Orb": {
-        "price": 8.0,
-        "bulk_price": 18.444444444444443
+        "price": 7.0,
+        "bulk_price": 18.7,
+        "weight": 0.10575925166666666,
+        "roll_keep": false
     },
     "Jeweller's Delirium Orb": {
-        "price": 8.0,
-        "bulk_price": 38.0
+        "price": 7.0,
+        "bulk_price": 16.6,
+        "weight": 0.09290242175,
+        "roll_keep": false
     }
 }

@@ -6,6 +6,7 @@ from settings import POE_SESSION_ID, USER_AGENT, LEAGUE
 __CURRENT_DIR__, _ = os.path.split(__file__)
 __CURRENT_PATH__ = os.path.join(__CURRENT_DIR__, "")
 __PRICES_PATH__ = os.path.join(__CURRENT_PATH__, "price_info")
+__DATA_PATH__ = os.path.join(__CURRENT_PATH__, "data")
 
 def load_json(json_file_path: str, base_path=__PRICES_PATH__):
     file_path = os.path.join(base_path, json_file_path)
@@ -28,7 +29,7 @@ def get_ninja_prices(item_type: str) -> dict:
     response = json.loads(requests.get(ninja_url_template).content)
     if overview_type == "currency":
         for item in response["lines"]:
-            prices[item["currencyTypeName"]] = round(item["chaosEquivalent"], 1)
+            prices[item["currencyTypeName"]] = round(item["chaosEquivalent"], 3)
     else:
         for item in response["lines"]:
             prices[item["name"]] = round(item["chaosValue"], 1)
@@ -75,5 +76,3 @@ def parse_catalysts_from_currency():
         if "Catalyst" in entry:
             catalysts[entry] = {"price": currency[entry]["price"], "bulk_price": 0}
     update_json(catalysts, "catalysts.json")
-
-parse_catalysts_from_currency()
