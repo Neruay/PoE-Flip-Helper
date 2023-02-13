@@ -1,130 +1,194 @@
 {
     "Winged Divination Scarab": {
         "price": 43.2,
-        "bulk_price": 37.9
+        "bulk_price": 37.9,
+        "weight": 0.0625,
+        "roll_keep": true
     },
     "Winged Ambush Scarab": {
         "price": 35.0,
-        "bulk_price": 41.3
+        "bulk_price": 41.3,
+        "weight": 0.0625,
+        "roll_keep": true
     },
     "Winged Reliquary Scarab": {
         "price": 34.9,
-        "bulk_price": 66.9
+        "bulk_price": 44.9,
+        "weight": 0.0625,
+        "roll_keep": true
     },
     "Winged Harbinger Scarab": {
         "price": 34.9,
-        "bulk_price": 37.7
+        "bulk_price": 37.7,
+        "weight": 0.0625,
+        "roll_keep": true
     },
     "Winged Breach Scarab": {
         "price": 28.0,
-        "bulk_price": 28.0
+        "bulk_price": 28.0,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Winged Abyss Scarab": {
         "price": 29.0,
-        "bulk_price": 46.0
+        "bulk_price": 46.0,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Winged Bestiary Scarab": {
         "price": 24.0,
-        "bulk_price": 24.0
+        "bulk_price": 24.0,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Winged Cartography Scarab": {
         "price": 25.9,
-        "bulk_price": 1.0
+        "bulk_price": 1.0,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Winged Expedition Scarab": {
         "price": 26.2,
-        "bulk_price": 32.2
+        "bulk_price": 32.2,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Winged Blight Scarab": {
         "price": 26.7,
-        "bulk_price": 34.5
+        "bulk_price": 34.5,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Winged Metamorph Scarab": {
         "price": 24.0,
-        "bulk_price": 40.0
+        "bulk_price": 40.0,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Winged Torment Scarab": {
         "price": 25.0,
-        "bulk_price": 40.0
+        "bulk_price": 40.0,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Winged Legion Scarab": {
         "price": 26.0,
-        "bulk_price": 25.3
+        "bulk_price": 25.3,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Winged Shaper Scarab": {
         "price": 24.0,
-        "bulk_price": 40.0
+        "bulk_price": 40.0,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Winged Elder Scarab": {
         "price": 25.0,
-        "bulk_price": 40.0
+        "bulk_price": 40.0,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Winged Sulphite Scarab": {
         "price": 25.0,
-        "bulk_price": 20.5
+        "bulk_price": 20.5,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Divination Scarab": {
         "price": 11.9,
-        "bulk_price": 12.2
+        "bulk_price": 12.2,
+        "weight": 0.0625,
+        "roll_keep": true
     },
     "Gilded Ambush Scarab": {
         "price": 9.7,
-        "bulk_price": 9.8
+        "bulk_price": 9.8,
+        "weight": 0.0625,
+        "roll_keep": true
     },
     "Gilded Harbinger Scarab": {
         "price": 8.4,
-        "bulk_price": 9.1
+        "bulk_price": 9.1,
+        "weight": 0.0625,
+        "roll_keep": true
     },
     "Gilded Reliquary Scarab": {
         "price": 8.5,
-        "bulk_price": 7.7
+        "bulk_price": 7.7,
+        "weight": 0.0625,
+        "roll_keep": true
     },
     "Gilded Legion Scarab": {
         "price": 6.0,
-        "bulk_price": 6.5
+        "bulk_price": 6.5,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Metamorph Scarab": {
         "price": 5.6,
-        "bulk_price": 5.5
+        "bulk_price": 5.5,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Cartography Scarab": {
         "price": 5.8,
-        "bulk_price": 5.8
+        "bulk_price": 5.8,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Blight Scarab": {
         "price": 6.0,
-        "bulk_price": 5.8
+        "bulk_price": 5.8,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Expedition Scarab": {
         "price": 6.0,
-        "bulk_price": 6.0
+        "bulk_price": 6.0,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Breach Scarab": {
         "price": 5.7,
-        "bulk_price": 5.5
+        "bulk_price": 5.5,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Shaper Scarab": {
         "price": 5.7,
-        "bulk_price": 5.4
+        "bulk_price": 5.4,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Bestiary Scarab": {
         "price": 5.0,
-        "bulk_price": 5.1
+        "bulk_price": 5.1,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Sulphite Scarab": {
         "price": 5.0,
-        "bulk_price": 5.5
+        "bulk_price": 5.5,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Elder Scarab": {
         "price": 5.3,
-        "bulk_price": 5.1
+        "bulk_price": 5.1,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Abyss Scarab": {
         "price": 5.0,
-        "bulk_price": 5.3
+        "bulk_price": 5.3,
+        "weight": 0.0625,
+        "roll_keep": false
     },
     "Gilded Torment Scarab": {
         "price": 4.3,
-        "bulk_price": 4.6
+        "bulk_price": 4.6,
+        "weight": 0.0625,
+        "roll_keep": false
     }
 }

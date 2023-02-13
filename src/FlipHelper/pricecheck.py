@@ -13,7 +13,7 @@ scarabs = load_json("scarabs.json")
 catalysts = load_json("catalysts.json")
 
 all_available_item_types = ["fossils", "deli_orbs", "essences", "oils", "currency", "scarabs", "catalysts"]
-selected_item_type = "scarabs" #fossils, deli_orbs, essences, oils, currency, scarabs, catalysts, all
+selected_item_type = "catalysts" #fossils, deli_orbs, essences, oils, currency, scarabs, catalysts, all
 
 def update_prices(ninja_query: str, current_json, json_to_update):
     for item in get_ninja_prices(ninja_query).items():
@@ -21,16 +21,17 @@ def update_prices(ninja_query: str, current_json, json_to_update):
             continue
         if ninja_query == "Scarab" and item[0].split(" ")[0] not in ["Winged", "Gilded"]:
             continue
-        if item[0] not in current_json and ninja_query == "Currency":
+        if item[0] not in current_json and ninja_query == "Currency" and current_json != catalysts:
             current_json[item[0]] = {"price": 0, "in_divines": 0}
-        if ninja_query == "Currency":
+        if ninja_query == "Currency" and current_json != catalysts:
             in_divines = item[1] / current_json["Divine Orb"]["price"]
             if in_divines > 1.0: current_json[item[0]]["in_divines"] = round(item[1] / current_json["Divine Orb"]["price"], 1)
             elif in_divines > 0.1: current_json[item[0]]["in_divines"] = round(item[1] / current_json["Divine Orb"]["price"], 2)
             else: current_json[item[0]]["in_divines"] = round(item[1] / current_json["Divine Orb"]["price"], 3)
-        if item[0] not in current_json: 
+        if (item[0] not in current_json and current_json != catalysts) or (item[0] not in current_json and current_json == catalysts and "Catalyst" in item[0]): 
             current_json[item[0]] = {"price": 0, "bulk_price": 0, "weight": 0, "roll_keep": False}
-        current_json[item[0]]["price"] = item[1]
+        if item[0] in current_json:
+            current_json[item[0]]["price"] = item[1]
     update_json(current_json, json_to_update)
 
 def update_bulk_prices(current_json: dict, json_to_update, BULK_SIZE: int):

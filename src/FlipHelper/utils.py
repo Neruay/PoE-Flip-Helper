@@ -27,7 +27,7 @@ def get_ninja_prices(item_type: str) -> dict:
     prices = {}
     ninja_url_template = "https://poe.ninja/api/data/{}overview?league={}&type={}&language=en".format(overview_type, LEAGUE, item_type)
     response = json.loads(requests.get(ninja_url_template).content)
-    if overview_type == "currency":
+    if overview_type == "currency" and item_type != "Catalyst":
         for item in response["lines"]:
             prices[item["currencyTypeName"]] = round(item["chaosEquivalent"], 3)
     else:
@@ -74,5 +74,5 @@ def parse_catalysts_from_currency():
     catalysts = {}
     for entry in entries:
         if "Catalyst" in entry:
-            catalysts[entry] = {"price": currency[entry]["price"], "bulk_price": 0}
+            catalysts[entry] = {"price": currency[entry]["price"], "bulk_price": 0, "weight": 0, "roll_keep": 0}
     update_json(catalysts, "catalysts.json")
