@@ -13,7 +13,7 @@ scarabs = load_json("scarabs.json")
 catalysts = load_json("catalysts.json")
 
 all_available_item_types = ["fossils", "deli_orbs", "essences", "oils", "currency", "scarabs", "catalysts"]
-selected_item_type = "catalysts" #fossils, deli_orbs, essences, oils, currency, scarabs, catalysts, all
+selected_item_type = "deli_orbs" #fossils, deli_orbs, essences, oils, currency, scarabs, catalysts, all
 
 def update_prices(ninja_query: str, current_json, json_to_update):
     for item in get_ninja_prices(ninja_query).items():
