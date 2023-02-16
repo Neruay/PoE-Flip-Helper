@@ -49,23 +49,34 @@ def get_keep_list(item_type):
             keep_list.append(item)
     return keep_list
 
-def calculate_average_profit(item_type):
-    outcomes = []
+def get_relative_weights(weights):
+    total_weight = sum(weights)
+
+def calculate_average_profit(item_type, include_item_price=True):
+    outcomes = {}
     roll_item_prices = []
     avg_roll_item_price = 0
     success_rate = 0
     average_profit_per_roll = 0
+    average_profit_per_roll_bulk = 0
+    average_profit_per_roll_minus_base = 0
+    average_profit_per_roll_bulk_minus_base = 0
     for item in item_type:
         if item_type[item]["roll_keep"] == True:
             success_rate += item_type[item]["weight"]
-            outcomes.append([item_type[item]["bulk_price"], item_type[item]["weight"]])
+            outcomes[item] = {"price": item_type[item]["price"], "bulk_price": item_type[item]["bulk_price"], "absolute_weight": item_type[item]["weight"], "relative_weight": 0}
         else: roll_item_prices.append(item_type[item]["price"])
+    for outcome in outcomes:
+        outcomes[outcome]["relative_weight"] = round(outcomes[outcome]["absolute_weight"] / success_rate, 2)
     if len(roll_item_prices) > 0: avg_roll_item_price = round(sum(roll_item_prices)/len(roll_item_prices), 2)
     if success_rate > 0:
         average_rolls_to_hit = round(1/success_rate, 3)
     else: return -1
     for outcome in outcomes:
-        average_profit_per_roll += (outcome[0] * outcome[1] * average_rolls_to_hit)
+        average_profit_per_roll += outcomes[outcome]["price"] * outcomes[outcome]["relative_weight"]
+        average_profit_per_roll_bulk += outcomes[outcome]["bulk_price"] * outcomes[outcome]["relative_weight"]
+        average_profit_per_roll_minus_base += outcomes[outcome]["price"] * outcomes[outcome]["relative_weight"]
+        average_profit_per_roll_bulk_minus_base += outcomes[outcome]["bulk_price"] * outcomes[outcome]["relative_weight"]
     match item_type:
         case item if item == deli_orbs: roll_cost = stack_change_prices["roll_deli_orbs"]
         case item if item == essences: roll_cost = stack_change_prices["roll_essences"]
@@ -73,13 +84,17 @@ def calculate_average_profit(item_type):
         case item if item == oils: roll_cost = stack_change_prices["roll_oils"]
         case item if item == scarabs_gilded or item == scarabs_winged: roll_cost = stack_change_prices["roll_scarabs"]
         case item if item == catalysts: roll_cost = stack_change_prices["roll_catalysts"]
-    average_profit_per_roll -= average_rolls_to_hit * roll_cost + avg_roll_item_price
-    return average_profit_per_roll
+    average_profit_per_roll -= (average_rolls_to_hit * roll_cost + avg_roll_item_price)
+    average_profit_per_roll_bulk -= (average_rolls_to_hit * roll_cost + avg_roll_item_price)
+    average_profit_per_roll_minus_base -= (average_rolls_to_hit * roll_cost)
+    average_profit_per_roll_bulk_minus_base -= (average_rolls_to_hit * roll_cost)
+    if include_item_price: return (average_profit_per_roll, average_profit_per_roll_bulk)
+    else: return (average_profit_per_roll_minus_base, average_profit_per_roll_bulk_minus_base)
 
 def get_profits_of_rerolls():
     profitability = []
     for item_type in all_available_item_types:
-        profitability.append("{} - {}".format(item_type[1], round(calculate_average_profit(item_type[0]), 2)))
+        profitability.append("{} - {} NINJA, {} BULK".format(item_type[1], round(calculate_average_profit(item_type[0])[0], 2), round(calculate_average_profit(item_type[0])[1], 2)))
     print(profitability)
 
 def generate_roll_table(item_type):
@@ -90,9 +105,11 @@ def generate_roll_table(item_type):
     for item in item_type:
         current_item = [item]
         for ninja_price_multiplier in range(100, 150, 10):
-            current_item.append("Flip profit: {}\nRoll profit: {}".format(format((item_type[item]["bulk_price"] - item_type[item]["price"] * ninja_price_multiplier/100), ".2f"), round(calculate_average_profit(item_type)-item_type[item]["price"], 2)))
+            current_item.append("Profits: Flip {}\nRoll ninja {}\nRoll bulk {}".format(format((item_type[item]["bulk_price"] - item_type[item]["price"] * ninja_price_multiplier/100), ".2f"), round(calculate_average_profit(item_type, False)[0]-item_type[item]["price"] * ninja_price_multiplier/100, 2), round(calculate_average_profit(item_type, False)[1]-item_type[item]["price"] * ninja_price_multiplier/100, 2)))
         current_item.append(format(item_type[item]["price"], ".2f"))
         current_item.append(format(item_type[item]["bulk_price"], ".2f"))
         roll_table.add_row(current_item)
-    print("RE-ROLL UNTIL HIT ANY OF THESE: {}\nAVERAGE CHAOS PROFIT PER RE-ROLL OF A SINGLE ITEM: {} (100% NINJA PRICE)".format(" | ".join(keep_list), round(calculate_average_profit(item_type), 2)))
+    print("RE-ROLL UNTIL HIT ANY OF THESE: {}\nAVERAGE CHAOS PROFIT PER RE-ROLL OF A SINGLE ITEM: {} - NINJA PRICE, {} - BULK PRICE".format(" | ".join(keep_list), round(calculate_average_profit(item_type)[0], 2), round(calculate_average_profit(item_type)[1], 2)))
     print(roll_table)
+
+get_profits_of_rerolls()
