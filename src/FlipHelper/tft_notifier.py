@@ -4,20 +4,15 @@ import time
 import cv2
 import pytesseract
 import numpy as np
-from spellchecker import SpellChecker
 import io
 import PIL
 import matplotlib
+from settings import *
+from spellchecker import SpellChecker
 
-
-CHANNEL_ID = 882251982830731315
-CHANNEL_ID_2 = 1075437230472048643
-AUTHORIZATION_TOKEN = "MjQ5MjQzNzE5MTQ3MDYxMjQ5.Ya5Wsw.G6cHQFDEmiD1Qu5CrPDwbaLDo_4"
-item_boxes = [(40, 196), (925, 196), (40, 244), (925, 244), (40, 292), (925, 292), (40, 340), (925, 340), (40, 388), (925, 388), (40, 436), (925, 436), (40, 484), (925, 484), (40, 532), (925, 532), (40, 580), (925, 580), (40, 628), (925, 628)]
-item_boxes_alt = [(49, 243), (1154, 243), (49, 303), (1154, 303), (49, 363), (1154, 363), (49, 423), (1154, 423), (49, 483), (1154, 483), (49, 543), (1154, 543), (49, 603), (1154, 603), (49, 663), (1154, 663), (49, 723), (1154, 723), (49, 783), (1154, 783)]
 msg_list = []
-orb_list = ["fine", "diviners", "skittering", "jewellers", "armoursmiths", "timeless", "fossilised", "imperial", "whispering", "blacksmiths", "amorphous", "foreboding", "obscured", "singular", "thaumaturges", "abyssal", "blighted", "cartographers", "fragmented"]
 res = []
+
 def parse_discord_message(msg):
     spell = SpellChecker(language=None, case_sensitive=False)
     spell.word_frequency.load_words(orb_list)
@@ -30,15 +25,15 @@ def parse_discord_message(msg):
     img = PIL.Image.open(image_bytes)
     img_full = np.array(img)
     img_full = cv2.cvtColor(img_full, cv2.COLOR_RGB2BGR)
-    for i in range(len(item_boxes)):
-        cur_x = item_boxes[i][0]
-        cur_y = item_boxes[i][1]
+    for i in range(len(ITEM_BOXES)):
+        cur_x = ITEM_BOXES[i][0]
+        cur_y = ITEM_BOXES[i][1]
         try:
             current_vector = np.array((img_full[cur_y, cur_x][0], img_full[cur_y, cur_x][1], img_full[cur_y, cur_x][2]))
             if np.linalg.norm(pattern_vector - current_vector) < 5:
-                roi_amount = img_full[cur_y+12:cur_y + 28, cur_x+13:cur_x + 37] ## 12 28 17 34
+                roi_amount = img_full[cur_y+12:cur_y + 28, cur_x+13:cur_x + 37]
                 roi_amount = cv2.resize(roi_amount, None, fx=2, fy=2)
-                roi_type = img_full[cur_y:cur_y + 38, cur_x + 118:cur_x + 240] # 0 38 118 240
+                roi_type = img_full[cur_y:cur_y + 38, cur_x + 118:cur_x + 240]
                 roi_amount = cv2.cvtColor(roi_amount, cv2.COLOR_BGR2GRAY)
                 gray = cv2.cvtColor(roi_type, cv2.COLOR_RGB2GRAY)
                 gray, img_bin = cv2.threshold(gray,128,255,cv2.THRESH_BINARY | cv2.THRESH_OTSU)
@@ -49,7 +44,7 @@ def parse_discord_message(msg):
 
                 amount = pytesseract.image_to_string(roi_amount, config='--psm 7 --oem 3 -c tessedit_char_whitelist=0123456789').strip()
                 item_type = pytesseract.image_to_string(roi_type, config='--psm 6 --oem 3').strip().lower().replace("’", "")
-                if item_type not in orb_list: item_type = spell.correction(item_type)
+                if item_type not in ORB_LIST: item_type = spell.correction(item_type)
                 res.append((amount, item_type))
         except IndexError:
             break
