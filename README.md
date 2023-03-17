@@ -67,4 +67,4 @@ Then you can generate a fancy table of gem types with all stats you need
 ```bash
   $ python run.py -f gems -m generate_gems_leveling_table
 ```
-Complete usage guide can be found in [docs]().
+Complete usage guide can be found in [docs](https://github.com/Neruay/PoE-Flip-Helper/blob/main/src/FlipHelper/docs/PoeFlipHelper.md).
