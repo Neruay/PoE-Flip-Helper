@@ -34,6 +34,7 @@ Create and enter virtual environment
   $ python.exe -m venv venv
   $ cd venv/
   $ source ./Scripts/activate
+  $ cd ..
 ```
 Install dependencies
 
