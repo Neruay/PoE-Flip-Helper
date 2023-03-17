@@ -1,31 +1,31 @@
 {
     "Prismatic Catalyst": {
-        "price": 12.0,
-        "bulk_price": 16.1,
+        "price": 12.84,
+        "bulk_price": 17.8,
         "weight": 0.048,
         "roll_keep": true
     },
     "Unstable Catalyst": {
-        "price": 11.0,
-        "bulk_price": 25.9,
-        "weight": 0.028,
+        "price": 10.0,
+        "bulk_price": 41.7,
+        "weight": 0.015,
         "roll_keep": true
     },
     "Fertile Catalyst": {
-        "price": 4.97,
-        "bulk_price": 5.8,
+        "price": 5.0,
+        "bulk_price": 5.7,
         "weight": 0.048,
         "roll_keep": true
     },
     "Accelerating Catalyst": {
         "price": 3.0,
-        "bulk_price": 7.2,
-        "weight": 0.014,
+        "bulk_price": 6.5,
+        "weight": 0.024,
         "roll_keep": true
     },
     "Tempering Catalyst": {
         "price": 1.0,
-        "bulk_price": 1.0,
+        "bulk_price": 1.2,
         "weight": 0,
         "roll_keep": false
     },
@@ -36,19 +36,19 @@
         "roll_keep": false
     },
     "Noxious Catalyst": {
-        "price": 0.67,
+        "price": 0.65,
         "bulk_price": 0.5,
         "weight": 0,
         "roll_keep": false
     },
     "Turbulent Catalyst": {
         "price": 0.5,
-        "bulk_price": 0.5,
+        "bulk_price": 0.7,
         "weight": 0,
         "roll_keep": false
     },
     "Abrasive Catalyst": {
-        "price": 0.29,
+        "price": 0.3,
         "bulk_price": 0.5,
         "weight": 0,
         "roll_keep": false

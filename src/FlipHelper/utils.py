@@ -8,7 +8,7 @@ __CURRENT_PATH__ = os.path.join(__CURRENT_DIR__, "")
 __PRICES_PATH__ = os.path.join(__CURRENT_PATH__, "price_info")
 __DATA_PATH__ = os.path.join(__CURRENT_PATH__, "data")
 
-def load_json(json_file_path: str, base_path=__PRICES_PATH__):
+def load_json(json_file_path: str, base_path=__PRICES_PATH__) -> dict:
     file_path = os.path.join(base_path, json_file_path)
     with open(file_path) as json_data:
         try:
@@ -16,7 +16,7 @@ def load_json(json_file_path: str, base_path=__PRICES_PATH__):
         except json.decoder.JSONDecodeError:
             print(f"Warning: {json_file_path} failed to decode json")
 
-def update_json(data: dict, json_file: str, base_path=__PRICES_PATH__):
+def update_json(data: dict, json_file: str, base_path=__PRICES_PATH__) -> None:
     path = os.path.join(base_path, json_file)
     with open(path, "w") as outfile:
         json.dump(data, outfile, indent=4)
@@ -35,7 +35,7 @@ def get_ninja_prices(item_type: str) -> dict:
             prices[item["name"]] = round(item["chaosValue"], 1)
     return prices
 
-def generate_query(item_list: list, stacksize) -> list:
+def generate_query(item_list: list, stacksize: int) -> list:
     query_list = []
     for item in item_list:
         query_list.append({"query":{"status":{"option":"online"},"type":item,"stats":[{"type":"and","filters":[]}],"filters":{"misc_filters":{"filters":{"stack_size":{"min":stacksize}}}}},"sort":{"price":"asc"}})
@@ -68,7 +68,7 @@ def poetrade_query(query: dict, proxy: dict) -> tuple:
         return (parsed_items[0]["item"]["baseType"], round(median, 1), prices)
     return (query["query"]["type"], -1, [-1])
 
-def parse_catalysts_from_currency():
+def parse_catalysts_from_currency() -> None:
     currency = load_json("currency.json")
     entries = currency.keys()
     catalysts = {}

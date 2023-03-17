@@ -1,266 +1,266 @@
 {
     "Divine Orb": {
-        "price": 259.87,
-        "in_divines": 1.0
+        "price": 273.31,
+        "in_divines": 1.1
     },
     "Mirror of Kalandra": {
-        "price": 97522.14,
-        "in_divines": 375.2
+        "price": 149507.71,
+        "in_divines": 575.3
     },
     "Mirror Shard": {
-        "price": 4892.56,
-        "in_divines": 18.8
+        "price": 7524.74,
+        "in_divines": 29.0
     },
     "Tempering Orb": {
-        "price": 1820.0,
-        "in_divines": 7.0
+        "price": 1370.0,
+        "in_divines": 5.3
     },
     "Fracturing Orb": {
-        "price": 1739.87,
-        "in_divines": 6.7
+        "price": 2153.95,
+        "in_divines": 8.3
     },
     "Secondary Regrading Lens": {
-        "price": 503.73,
-        "in_divines": 1.9
-    },
-    "Orb of Dominance": {
-        "price": 494.0,
-        "in_divines": 1.9
-    },
-    "Tainted Divine Teardrop": {
-        "price": 399.09,
+        "price": 383.6,
         "in_divines": 1.5
     },
+    "Orb of Dominance": {
+        "price": 548.0,
+        "in_divines": 2.1
+    },
+    "Tainted Divine Teardrop": {
+        "price": 822.0,
+        "in_divines": 3.2
+    },
     "Tailoring Orb": {
-        "price": 372.57,
-        "in_divines": 1.4
+        "price": 411.0,
+        "in_divines": 1.6
     },
     "Maven's Orb": {
         "price": 359.71,
         "in_divines": 1.4
     },
     "Prime Regrading Lens": {
-        "price": 151.79,
-        "in_divines": 0.58
-    },
-    "Hunter's Exalted Orb": {
-        "price": 113.42,
+        "price": 119.17,
         "in_divines": 0.44
     },
+    "Hunter's Exalted Orb": {
+        "price": 95.0,
+        "in_divines": 0.35
+    },
     "Sacred Crystallised Lifeforce": {
-        "price": 108.27,
-        "in_divines": 0.42
+        "price": 234.54,
+        "in_divines": 0.86
     },
     "Elevated Sextant": {
-        "price": 83.62,
-        "in_divines": 0.32
+        "price": 60.38,
+        "in_divines": 0.22
     },
     "Fracturing Shard": {
-        "price": 84.36,
-        "in_divines": 0.32
+        "price": 91.17,
+        "in_divines": 0.33
     },
     "Tainted Exalted Orb": {
-        "price": 70.0,
-        "in_divines": 0.27
+        "price": 200.0,
+        "in_divines": 0.73
     },
     "Sacred Orb": {
-        "price": 59.13,
-        "in_divines": 0.23
+        "price": 89.21,
+        "in_divines": 0.33
     },
     "Orb of Conflict": {
-        "price": 58.73,
-        "in_divines": 0.23
+        "price": 59.64,
+        "in_divines": 0.22
     },
     "Crusader's Exalted Orb": {
-        "price": 49.77,
-        "in_divines": 0.19
+        "price": 50.0,
+        "in_divines": 0.18
     },
     "Awakener's Orb": {
-        "price": 49.1,
-        "in_divines": 0.19
+        "price": 115.0,
+        "in_divines": 0.42
     },
     "Exceptional Eldritch Ember": {
-        "price": 39.48,
-        "in_divines": 0.15
+        "price": 45.0,
+        "in_divines": 0.16
     },
     "Tainted Blessing": {
         "price": 40.0,
         "in_divines": 0.15
     },
     "Eldritch Chaos Orb": {
-        "price": 36.48,
+        "price": 38.8,
         "in_divines": 0.14
     },
     "Blessing of Chayula": {
-        "price": 32.0,
+        "price": 33.6,
         "in_divines": 0.12
     },
     "Exceptional Eldritch Ichor": {
-        "price": 31.82,
-        "in_divines": 0.12
+        "price": 35.0,
+        "in_divines": 0.13
     },
     "Eldritch Orb of Annulment": {
-        "price": 29.85,
-        "in_divines": 0.11
+        "price": 38.72,
+        "in_divines": 0.14
     },
     "Redeemer's Exalted Orb": {
-        "price": 30.0,
-        "in_divines": 0.12
+        "price": 50.0,
+        "in_divines": 0.18
     },
     "Warlord's Exalted Orb": {
-        "price": 30.0,
-        "in_divines": 0.12
+        "price": 45.78,
+        "in_divines": 0.17
     },
     "Exalted Orb": {
-        "price": 26.29,
-        "in_divines": 0.1
+        "price": 26.27,
+        "in_divines": 0.096
     },
     "Tainted Mythic Orb": {
-        "price": 24.73,
-        "in_divines": 0.095
+        "price": 20.0,
+        "in_divines": 0.073
     },
     "Tainted Orb of Fusing": {
-        "price": 23.12,
-        "in_divines": 0.089
+        "price": 29.61,
+        "in_divines": 0.11
     },
     "Eldritch Exalted Orb": {
-        "price": 19.76,
-        "in_divines": 0.076
+        "price": 20.08,
+        "in_divines": 0.073
     },
     "Ancient Orb": {
-        "price": 15.05,
-        "in_divines": 0.058
+        "price": 13.79,
+        "in_divines": 0.05
     },
     "Comprehensive Scouting Report": {
-        "price": 15.0,
-        "in_divines": 0.058
+        "price": 38.2,
+        "in_divines": 0.14
     },
     "Prismatic Catalyst": {
-        "price": 11.8,
-        "in_divines": 0.045
+        "price": 13.0,
+        "in_divines": 0.048
     },
     "Unstable Catalyst": {
-        "price": 11.0,
-        "in_divines": 0.042
+        "price": 10.0,
+        "in_divines": 0.037
     },
     "Blessing of Xoph": {
         "price": 10.0,
-        "in_divines": 0.038
+        "in_divines": 0.037
     },
     "Veiled Chaos Orb": {
-        "price": 9.88,
-        "in_divines": 0.038
+        "price": 11.88,
+        "in_divines": 0.043
     },
     "Blessing of Tul": {
         "price": 10.0,
-        "in_divines": 0.038
+        "in_divines": 0.037
     },
     "Blessing of Uul-Netol": {
-        "price": 9.0,
-        "in_divines": 0.035
+        "price": 10.0,
+        "in_divines": 0.037
     },
     "Oil Extractor": {
         "price": 9.0,
-        "in_divines": 0.035
-    },
-    "Grand Eldritch Ember": {
-        "price": 8.12,
-        "in_divines": 0.031
-    },
-    "Blessing of Esh": {
-        "price": 8.6,
         "in_divines": 0.033
     },
+    "Grand Eldritch Ember": {
+        "price": 8.86,
+        "in_divines": 0.032
+    },
+    "Blessing of Esh": {
+        "price": 10.0,
+        "in_divines": 0.037
+    },
     "Otherworldly Scouting Report": {
-        "price": 8.0,
-        "in_divines": 0.031
+        "price": 10.0,
+        "in_divines": 0.037
     },
     "Charged Compass": {
-        "price": 7.0,
-        "in_divines": 0.027
+        "price": 8.46,
+        "in_divines": 0.031
     },
     "Orb of Annulment": {
-        "price": 7.43,
-        "in_divines": 0.029
+        "price": 8.3,
+        "in_divines": 0.03
     },
     "Ritual Vessel": {
-        "price": 7.0,
-        "in_divines": 0.027
+        "price": 6.0,
+        "in_divines": 0.022
     },
     "Influenced Scouting Report": {
-        "price": 7.0,
-        "in_divines": 0.027
+        "price": 5.0,
+        "in_divines": 0.018
     },
     "Tainted Chaos Orb": {
         "price": 5.0,
-        "in_divines": 0.019
+        "in_divines": 0.018
     },
     "Fertile Catalyst": {
-        "price": 4.96,
-        "in_divines": 0.019
+        "price": 5.0,
+        "in_divines": 0.018
     },
     "Grand Eldritch Ichor": {
-        "price": 4.87,
-        "in_divines": 0.019
+        "price": 4.91,
+        "in_divines": 0.018
     },
     "Tainted Chromatic Orb": {
-        "price": 4.87,
-        "in_divines": 0.019
+        "price": 5.0,
+        "in_divines": 0.018
     },
     "Awakened Sextant": {
-        "price": 4.14,
-        "in_divines": 0.016
+        "price": 2.99,
+        "in_divines": 0.011
     },
     "Stacked Deck": {
-        "price": 3.17,
-        "in_divines": 0.012
+        "price": 2.89,
+        "in_divines": 0.011
     },
     "Accelerating Catalyst": {
         "price": 3.0,
-        "in_divines": 0.012
-    },
-    "Surveyor's Compass": {
-        "price": 2.98,
         "in_divines": 0.011
     },
+    "Surveyor's Compass": {
+        "price": 2.0,
+        "in_divines": 0.007
+    },
     "Delirious Scouting Report": {
-        "price": 3.0,
-        "in_divines": 0.012
+        "price": 3.72,
+        "in_divines": 0.014
     },
     "Operative's Scouting Report": {
         "price": 3.0,
         "in_divines": 0.012
     },
     "Singular Scouting Report": {
-        "price": 3.0,
-        "in_divines": 0.012
+        "price": 2.0,
+        "in_divines": 0.007
     },
     "Blighted Scouting Report": {
         "price": 3.0,
-        "in_divines": 0.012
+        "in_divines": 0.011
     },
     "Harbinger's Orb": {
-        "price": 1.99,
-        "in_divines": 0.008
+        "price": 2.0,
+        "in_divines": 0.007
     },
     "Exalted Shard": {
         "price": 1.5,
-        "in_divines": 0.006
+        "in_divines": 0.005
     },
     "Greater Eldritch Ember": {
-        "price": 1.48,
-        "in_divines": 0.006
+        "price": 1.96,
+        "in_divines": 0.007
     },
     "Orb of Unmaking": {
-        "price": 1.54,
-        "in_divines": 0.006
+        "price": 0.99,
+        "in_divines": 0.004
     },
     "Gemcutter's Prism": {
-        "price": 1.4,
+        "price": 1.31,
         "in_divines": 0.005
     },
     "Vaal Orb": {
-        "price": 1.07,
+        "price": 0.97,
         "in_divines": 0.004
     },
     "Annulment Shard": {
@@ -280,35 +280,35 @@
         "in_divines": 0.004
     },
     "Greater Eldritch Ichor": {
-        "price": 0.96,
-        "in_divines": 0.004
+        "price": 0.91,
+        "in_divines": 0.003
     },
     "Regal Orb": {
-        "price": 0.91,
-        "in_divines": 0.004
+        "price": 0.78,
+        "in_divines": 0.003
     },
     "Intrinsic Catalyst": {
-        "price": 0.73,
+        "price": 0.75,
         "in_divines": 0.003
     },
     "Orb of Regret": {
-        "price": 0.68,
-        "in_divines": 0.003
+        "price": 0.52,
+        "in_divines": 0.002
     },
     "Noxious Catalyst": {
-        "price": 0.67,
-        "in_divines": 0.003
+        "price": 0.65,
+        "in_divines": 0.002
     },
     "Vaal Scouting Report": {
-        "price": 0.65,
-        "in_divines": 0.003
+        "price": 0.5,
+        "in_divines": 0.002
     },
     "Explorer's Scouting Report": {
-        "price": 0.62,
+        "price": 0.5,
         "in_divines": 0.002
     },
     "Orb of Scouring": {
-        "price": 0.59,
+        "price": 0.44,
         "in_divines": 0.002
     },
     "Turbulent Catalyst": {
@@ -316,15 +316,15 @@
         "in_divines": 0.002
     },
     "Enkindling Orb": {
-        "price": 0.43,
-        "in_divines": 0.002
+        "price": 1.0,
+        "in_divines": 0.004
     },
     "Blessed Orb": {
-        "price": 0.39,
-        "in_divines": 0.002
+        "price": 0.33,
+        "in_divines": 0.001
     },
     "Orb of Horizons": {
-        "price": 0.33,
+        "price": 0.3,
         "in_divines": 0.001
     },
     "Instilling Orb": {
@@ -332,19 +332,19 @@
         "in_divines": 0.001
     },
     "Glassblower's Bauble": {
-        "price": 0.29,
+        "price": 0.3,
         "in_divines": 0.001
     },
     "Abrasive Catalyst": {
-        "price": 0.29,
+        "price": 0.3,
         "in_divines": 0.001
     },
     "Cartographer's Chisel": {
-        "price": 0.27,
+        "price": 0.2,
         "in_divines": 0.001
     },
     "Lesser Eldritch Ember": {
-        "price": 0.28,
+        "price": 0.25,
         "in_divines": 0.001
     },
     "Imbued Catalyst": {
@@ -360,11 +360,11 @@
         "in_divines": 0.001
     },
     "Orb of Fusing": {
-        "price": 0.19,
+        "price": 0.22,
         "in_divines": 0.001
     },
     "Chromatic Orb": {
-        "price": 0.15,
+        "price": 0.14,
         "in_divines": 0.001
     },
     "Orb of Alchemy": {
@@ -372,19 +372,19 @@
         "in_divines": 0.0
     },
     "Orb of Alteration": {
-        "price": 0.09,
+        "price": 0.08,
         "in_divines": 0.0
     },
     "Orb of Chance": {
-        "price": 0.09,
+        "price": 0.08,
         "in_divines": 0.0
     },
     "Engineer's Orb": {
-        "price": 0.09,
+        "price": 0.11,
         "in_divines": 0.0
     },
     "Orb of Augmentation": {
-        "price": 0.08,
+        "price": 0.07,
         "in_divines": 0.0
     },
     "Orb of Binding": {
@@ -396,11 +396,11 @@
         "in_divines": 0.0
     },
     "Vivid Crystallised Lifeforce": {
-        "price": 0.06,
+        "price": 0.07,
         "in_divines": 0.0
     },
     "Portal Scroll": {
-        "price": 0.04,
+        "price": 0.03,
         "in_divines": 0.0
     },
     "Blacksmith's Whetstone": {
@@ -408,11 +408,11 @@
         "in_divines": 0.0
     },
     "Wild Crystallised Lifeforce": {
-        "price": 0.03,
+        "price": 0.02,
         "in_divines": 0.0
     },
     "Primal Crystallised Lifeforce": {
-        "price": 0.03,
+        "price": 0.02,
         "in_divines": 0.0
     },
     "Orb of Transmutation": {
@@ -424,6 +424,10 @@
         "in_divines": 0.0
     },
     "Scroll of Wisdom": {
+        "price": 0.01,
+        "in_divines": 0.0
+    },
+    "Rogue's Marker": {
         "price": 0.01,
         "in_divines": 0.0
     }

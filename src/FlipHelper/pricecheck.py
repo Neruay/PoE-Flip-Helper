@@ -3,6 +3,7 @@ from utils import __CURRENT_PATH__
 from price_info import *
 from settings import BULK_SIZE
 import time
+import argparse
 
 deli_orbs = load_json("deli_orbs.json")
 essences = load_json("essences.json")
@@ -12,10 +13,9 @@ oils = load_json("oils.json")
 scarabs = load_json("scarabs.json")
 catalysts = load_json("catalysts.json")
 
-all_available_item_types = ["fossils", "deli_orbs", "essences", "oils", "currency", "scarabs", "catalysts"]
-selected_item_type = "deli_orbs" #fossils, deli_orbs, essences, oils, currency, scarabs, catalysts, all
+all_available_item_types = ["fossils", "deli_orbs", "essences", "oils", "scarabs", "catalysts"]
 
-def update_prices(ninja_query: str, current_json, json_to_update):
+def update_prices(ninja_query: str, current_json: dict, json_to_update: dict) -> None:
     for item in get_ninja_prices(ninja_query).items():
         if ninja_query == "Essence" and item[0].split(" ")[0] not in ["Deafening"]:
             continue
@@ -34,7 +34,7 @@ def update_prices(ninja_query: str, current_json, json_to_update):
             current_json[item[0]]["price"] = item[1]
     update_json(current_json, json_to_update)
 
-def update_bulk_prices(current_json: dict, json_to_update, BULK_SIZE: int):
+def update_bulk_prices(current_json: dict, json_to_update: dict, BULK_SIZE: int) -> None:
     quaries = generate_query(current_json.keys(), BULK_SIZE)
     poetrade_items = []
     proxy_list = load_json("proxy_list.json", __CURRENT_PATH__)
@@ -55,47 +55,56 @@ def update_bulk_prices(current_json: dict, json_to_update, BULK_SIZE: int):
         else: current_json[item[0]]["bulk_price"] = current_json[item[0]]["price"]
     update_json(current_json, json_to_update)
 
-if selected_item_type == "all": types = all_available_item_types
-else: types = [selected_item_type]
-for item_type in types:
-    json_to_update = ""
-    current_json = ""
-    ninja_query = ""
-    match item_type:
-        case "deli_orbs":
-            json_to_update = "deli_orbs.json"
-            current_json = deli_orbs
-            ninja_query = "DeliriumOrb"
-        case "essences":
-            json_to_update = "essences.json"
-            current_json = essences
-            ninja_query = "Essence"
-        case "fossils":
-            json_to_update = "fossils.json"
-            current_json = fossils
-            ninja_query = "Fossil"
-        case "currency":
-            json_to_update = "currency.json"
-            current_json = currency
-            ninja_query = "Currency"
-        case "oils":
-            json_to_update = "oils.json"
-            current_json = oils
-            ninja_query = "Oil"
-        case "scarabs":
-            json_to_update = "scarabs.json"
-            current_json = scarabs
-            ninja_query = "Scarab"
-        case "catalysts":
-            json_to_update = "catalysts.json"
-            current_json = catalysts
-            ninja_query = "Currency"
-        case _:
-            assert current_json != "", "item_type error"
+def run(*args) -> None:
+    match args[0]:
+        case "update_prices": 
+            types = []
+            types = [args[1]] if args[1] != "all" else all_available_item_types
+            for item_type in types:
+                json_to_update = ""
+                current_json = ""
+                ninja_query = ""
+                match item_type:
+                    case "deli_orbs":
+                        json_to_update = "deli_orbs.json"
+                        current_json = deli_orbs
+                        ninja_query = "DeliriumOrb"
+                    case "essences":
+                        json_to_update = "essences.json"
+                        current_json = essences
+                        ninja_query = "Essence"
+                    case "fossils":
+                        json_to_update = "fossils.json"
+                        current_json = fossils
+                        ninja_query = "Fossil"
+                    case "oils":
+                        json_to_update = "oils.json"
+                        current_json = oils
+                        ninja_query = "Oil"
+                    case "scarabs":
+                        json_to_update = "scarabs.json"
+                        current_json = scarabs
+                        ninja_query = "Scarab"
+                    case "catalysts":
+                        json_to_update = "catalysts.json"
+                        current_json = catalysts
+                        ninja_query = "Currency"
+                    case _:
+                        assert current_json != "", "item_type error"
+                update_prices(ninja_query, current_json, json_to_update)
+                update_bulk_prices(current_json, json_to_update, BULK_SIZE)
 
-update_prices(ninja_query, current_json, json_to_update)
-update_bulk_prices(current_json, json_to_update, BULK_SIZE)
-
-    
-
-   
+if __name__ == "__main__":
+    import sys
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "mode",
+    )
+    parser.add_argument(
+        "item_type",
+        nargs="?",
+        default="all"
+    )
+    args = parser.parse_args()
+    arg_list = [args.mode, args.item_type] if args.item_type else [args.mode]
+    sys.exit(run(*arg_list))

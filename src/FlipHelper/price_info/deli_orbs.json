@@ -1,115 +1,115 @@
 {
     "Diviner's Delirium Orb": {
-        "price": 28.0,
-        "bulk_price": 31.4,
+        "price": 25.0,
+        "bulk_price": 23.9,
         "weight": 0.04708707738333333,
         "roll_keep": true
     },
     "Skittering Delirium Orb": {
-        "price": 21.8,
-        "bulk_price": 22.9,
+        "price": 17.4,
+        "bulk_price": 41.7,
         "weight": 0.033475934766666667,
         "roll_keep": true
     },
     "Fine Delirium Orb": {
-        "price": 15.0,
-        "bulk_price": 15.2,
+        "price": 10.0,
+        "bulk_price": 15.3,
         "weight": 0.10657198716666667,
         "roll_keep": true
     },
     "Cartographer's Delirium Orb": {
-        "price": 8.0,
-        "bulk_price": 27.5,
+        "price": 6.0,
+        "bulk_price": 18.0,
         "weight": 0.036860231599999994,
-        "roll_keep": false
+        "roll_keep": true
     },
     "Singular Delirium Orb": {
         "price": 8.0,
-        "bulk_price": 5.8,
+        "bulk_price": 8.0,
         "weight": 0.019826504916666668,
         "roll_keep": false
     },
     "Whispering Delirium Orb": {
-        "price": 7.2,
-        "bulk_price": 28.1,
+        "price": 5.0,
+        "bulk_price": 61.0,
         "weight": 0.06617285425,
         "roll_keep": false
     },
     "Abyssal Delirium Orb": {
-        "price": 7.0,
-        "bulk_price": 21.8,
+        "price": 5.0,
+        "bulk_price": 36.0,
         "weight": 0.034463568775,
         "roll_keep": false
     },
     "Amorphous Delirium Orb": {
-        "price": 8.0,
-        "bulk_price": 22.0,
+        "price": 5.0,
+        "bulk_price": 46.5,
         "weight": 0.037372311241666664,
         "roll_keep": false
     },
     "Blighted Delirium Orb": {
-        "price": 7.0,
-        "bulk_price": 33.5,
+        "price": 5.0,
+        "bulk_price": 80.0,
         "weight": 0.033600234433333334,
         "roll_keep": false
     },
     "Foreboding Delirium Orb": {
-        "price": 7.8,
-        "bulk_price": 24.7,
+        "price": 5.0,
+        "bulk_price": 33.5,
         "weight": 0.04961202054166667,
         "roll_keep": false
     },
     "Fossilised Delirium Orb": {
-        "price": 7.0,
-        "bulk_price": 18.3,
+        "price": 5.0,
+        "bulk_price": 46.5,
         "weight": 0.03128555441666667,
         "roll_keep": false
     },
     "Fragmented Delirium Orb": {
-        "price": 7.0,
-        "bulk_price": 19.8,
+        "price": 5.0,
+        "bulk_price": 36.0,
         "weight": 0.030150379691666666,
         "roll_keep": false
     },
     "Obscured Delirium Orb": {
-        "price": 7.0,
-        "bulk_price": 13.7,
+        "price": 5.0,
+        "bulk_price": 16.5,
         "weight": 0.031453138358333334,
         "roll_keep": false
     },
     "Thaumaturge's Delirium Orb": {
-        "price": 7.0,
-        "bulk_price": 19.3,
+        "price": 5.0,
+        "bulk_price": 30.0,
         "weight": 0.03145576939166667,
         "roll_keep": false
     },
     "Timeless Delirium Orb": {
-        "price": 8.0,
-        "bulk_price": 22.0,
+        "price": 5.0,
+        "bulk_price": 16.5,
         "weight": 0.03646608191666667,
         "roll_keep": false
     },
     "Imperial Delirium Orb": {
-        "price": 6.0,
-        "bulk_price": 16.6,
+        "price": 5.0,
+        "bulk_price": 37.0,
         "weight": 0.05654902766666667,
         "roll_keep": false
     },
     "Armoursmith's Delirium Orb": {
-        "price": 7.0,
-        "bulk_price": 30.7,
+        "price": 5.0,
+        "bulk_price": 41.7,
         "weight": 0.12355833933333332,
         "roll_keep": false
     },
     "Blacksmith's Delirium Orb": {
-        "price": 7.0,
-        "bulk_price": 18.7,
+        "price": 4.0,
+        "bulk_price": 51.8,
         "weight": 0.10575925166666666,
         "roll_keep": false
     },
     "Jeweller's Delirium Orb": {
-        "price": 7.0,
-        "bulk_price": 16.6,
+        "price": 5.0,
+        "bulk_price": 32.8,
         "weight": 0.09290242175,
         "roll_keep": false
     }

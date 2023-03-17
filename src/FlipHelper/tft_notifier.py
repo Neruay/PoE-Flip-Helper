@@ -6,7 +6,6 @@ import pytesseract
 import numpy as np
 import io
 import PIL
-import matplotlib
 from settings import *
 from spellchecker import SpellChecker
 
@@ -15,7 +14,7 @@ res = []
 
 def parse_discord_message(msg):
     spell = SpellChecker(language=None, case_sensitive=False)
-    spell.word_frequency.load_words(orb_list)
+    spell.word_frequency.load_words(ORB_LIST)
     ninja_multiplier = msg["content"].split(" ")[19][2:-2]
     url = msg["attachments"][0]["url"]
     pytesseract.pytesseract.tesseract_cmd = 'E:/code/Tesseract/tesseract.exe'
@@ -52,13 +51,13 @@ def parse_discord_message(msg):
 
 def get_channel_messages(channelid):
     headers = {"authorization": AUTHORIZATION_TOKEN}
-    r = requests.get("https://discord.com/api/v9/channels/{}/messages?limit=7".format(channelid), headers=headers)
+    r = requests.get("https://discord.com/api/v9/channels/{}/messages?limit=1".format(channelid), headers=headers)
     response = json.loads(r.content)
     if response not in msg_list:
         msg_list.clear()
         msg_list.append(response)
-        if "Most valuable" in response[6]["content"]:
-            parse_discord_message(response[6])
+        if "Most valuable" in response[0]["content"]:
+            parse_discord_message(response[0])
             res = []
 
 while True:

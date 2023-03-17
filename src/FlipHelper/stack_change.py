@@ -2,6 +2,7 @@ from price_info import *
 from utils import *
 from settings import BULK_SIZE
 from prettytable import *
+import argparse
 
 deli_orbs = load_json("deli_orbs.json")
 essences = load_json("essences.json")
@@ -33,7 +34,7 @@ stack_change_prices = {
     "roll_catalysts": yellow_juice_price * 30
 }
 
-def get_keep_list(item_type):
+def get_keep_list(item_type: dict) -> list:
     keep_list = []
     match item_type:
         case item if item == deli_orbs: current_json = "deli_orbs.json"
@@ -49,10 +50,7 @@ def get_keep_list(item_type):
             keep_list.append(item)
     return keep_list
 
-def get_relative_weights(weights):
-    total_weight = sum(weights)
-
-def calculate_average_profit(item_type, include_item_price=True):
+def calculate_average_profit(item_type: dict, include_item_price=True) -> tuple:
     outcomes = {}
     roll_item_prices = []
     avg_roll_item_price = 0
@@ -91,13 +89,13 @@ def calculate_average_profit(item_type, include_item_price=True):
     if include_item_price: return (average_profit_per_roll, average_profit_per_roll_bulk)
     else: return (average_profit_per_roll_minus_base, average_profit_per_roll_bulk_minus_base)
 
-def get_profits_of_rerolls():
+def get_profits_of_rerolls() -> None:
     profitability = []
     for item_type in all_available_item_types:
         profitability.append("{} - {} NINJA, {} BULK".format(item_type[1], round(calculate_average_profit(item_type[0])[0], 2), round(calculate_average_profit(item_type[0])[1], 2)))
     print(profitability)
 
-def generate_roll_table(item_type):
+def generate_roll_table(item_type: dict) -> None:
     keep_list = get_keep_list(item_type)
     roll_table = PrettyTable(hrules=ALL, padding_width=1)
     roll_table.set_style(SINGLE_BORDER)
@@ -112,4 +110,31 @@ def generate_roll_table(item_type):
     print("RE-ROLL UNTIL HIT ANY OF THESE: {}\nAVERAGE CHAOS PROFIT PER RE-ROLL OF A SINGLE ITEM: {} - NINJA PRICE, {} - BULK PRICE".format(" | ".join(keep_list), round(calculate_average_profit(item_type)[0], 2), round(calculate_average_profit(item_type)[1], 2)))
     print(roll_table)
 
-get_profits_of_rerolls()
+def run(*args) -> None:
+    match args[0]:
+        case "get_profits_of_rerolls": get_profits_of_rerolls()
+        case "generate_roll_table": 
+            match args[1]:
+                case "deli_orbs": item_type = deli_orbs
+                case "essences": item_type = essences
+                case "fossils": item_type = fossils
+                case "oils": item_type = oils
+                case "scarabs_gilded": item_type = scarabs_gilded
+                case "scarabs_winged": item_type = scarabs_winged
+                case "catalysts": item_type = catalysts
+            generate_roll_table(item_type)
+
+if __name__ == "__main__":
+    import sys
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "mode",
+    )
+    parser.add_argument(
+        "item_type",
+        nargs="?",
+        default=0
+    )
+    args = parser.parse_args()
+    arg_list = [args.mode, args.item_type] if args.item_type else [args.mode]
+    sys.exit(run(*arg_list))

@@ -1,121 +1,121 @@
 {
     "Deafening Essence of Contempt": {
-        "price": 15.0,
-        "bulk_price": 31.5,
+        "price": 13.0,
+        "bulk_price": 13.0,
         "weight": 0.05,
         "roll_keep": true
     },
     "Deafening Essence of Loathing": {
-        "price": 13.1,
-        "bulk_price": 32.4,
+        "price": 12.0,
+        "bulk_price": 12.7,
         "weight": 0.05,
         "roll_keep": true
     },
     "Deafening Essence of Envy": {
         "price": 7.0,
-        "bulk_price": 48.1,
+        "bulk_price": 8.7,
         "weight": 0.05,
         "roll_keep": true
     },
     "Deafening Essence of Rage": {
-        "price": 7.9,
-        "bulk_price": 9.0,
-        "weight": 0.05,
-        "roll_keep": false
-    },
-    "Deafening Essence of Scorn": {
-        "price": 6.0,
-        "bulk_price": 13.0,
-        "weight": 0.05,
-        "roll_keep": false
-    },
-    "Deafening Essence of Spite": {
         "price": 6.0,
         "bulk_price": 8.8,
         "weight": 0.05,
         "roll_keep": false
     },
+    "Deafening Essence of Scorn": {
+        "price": 7.0,
+        "bulk_price": 11.2,
+        "weight": 0.05,
+        "roll_keep": false
+    },
+    "Deafening Essence of Spite": {
+        "price": 6.0,
+        "bulk_price": 6.8,
+        "weight": 0.05,
+        "roll_keep": false
+    },
     "Deafening Essence of Woe": {
         "price": 5.0,
-        "bulk_price": 20.6,
+        "bulk_price": 6.5,
         "weight": 0.05,
         "roll_keep": true
     },
     "Deafening Essence of Zeal": {
-        "price": 7.0,
-        "bulk_price": 8.4,
+        "price": 6.0,
+        "bulk_price": 6.8,
         "weight": 0.05,
         "roll_keep": false
     },
     "Deafening Essence of Misery": {
         "price": 5.0,
-        "bulk_price": 16.7,
+        "bulk_price": 5.7,
         "weight": 0.05,
         "roll_keep": false
     },
     "Deafening Essence of Sorrow": {
         "price": 5.0,
-        "bulk_price": 7.2,
+        "bulk_price": 6.3,
         "weight": 0.05,
         "roll_keep": false
     },
     "Deafening Essence of Torment": {
-        "price": 3.7,
-        "bulk_price": 7.3,
+        "price": 5.0,
+        "bulk_price": 5.8,
         "weight": 0.05,
         "roll_keep": false
     },
     "Deafening Essence of Greed": {
-        "price": 4.0,
-        "bulk_price": 21.0,
+        "price": 5.0,
+        "bulk_price": 5.7,
         "weight": 0.05,
         "roll_keep": true
     },
     "Deafening Essence of Hatred": {
         "price": 4.0,
-        "bulk_price": 7.9,
+        "bulk_price": 5.1,
         "weight": 0.05,
         "roll_keep": false
     },
     "Deafening Essence of Wrath": {
-        "price": 3.0,
-        "bulk_price": 9.2,
+        "price": 4.0,
+        "bulk_price": 4.8,
         "weight": 0.05,
         "roll_keep": false
     },
     "Deafening Essence of Anger": {
         "price": 3.0,
-        "bulk_price": 9.4,
+        "bulk_price": 6.1,
         "weight": 0.05,
         "roll_keep": false
     },
     "Deafening Essence of Doubt": {
         "price": 2.0,
-        "bulk_price": 8.0,
+        "bulk_price": 5.1,
         "weight": 0.05,
         "roll_keep": false
     },
     "Deafening Essence of Dread": {
-        "price": 3.0,
-        "bulk_price": 10.0,
+        "price": 4.3,
+        "bulk_price": 5.7,
         "weight": 0.05,
         "roll_keep": false
     },
     "Deafening Essence of Fear": {
-        "price": 3.0,
-        "bulk_price": 18.6,
+        "price": 4.0,
+        "bulk_price": 5.4,
         "weight": 0.05,
         "roll_keep": false
     },
     "Deafening Essence of Suffering": {
-        "price": 2.0,
-        "bulk_price": 10.0,
+        "price": 3.0,
+        "bulk_price": 5.6,
         "weight": 0.05,
         "roll_keep": false
     },
     "Deafening Essence of Anguish": {
         "price": 2.0,
-        "bulk_price": 8.5,
+        "bulk_price": 5.2,
         "weight": 0.05,
         "roll_keep": false
     }

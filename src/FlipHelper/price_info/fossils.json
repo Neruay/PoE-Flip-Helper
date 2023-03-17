@@ -1,115 +1,115 @@
 {
     "Faceted Fossil": {
-        "price": 79.6,
-        "bulk_price": 79.6,
+        "price": 91.5,
+        "bulk_price": 91.5,
         "weight": 0.01,
         "roll_keep": true
     },
     "Glyphic Fossil": {
-        "price": 79.0,
-        "bulk_price": 79.0,
+        "price": 100.0,
+        "bulk_price": 100.0,
         "weight": 0.01,
         "roll_keep": true
     },
     "Fractured Fossil": {
         "price": 33.0,
-        "bulk_price": 1.0,
+        "bulk_price": 37.3,
         "weight": 0.01,
         "roll_keep": true
     },
     "Hollow Fossil": {
-        "price": 11.0,
-        "bulk_price": 1.0,
+        "price": 14.0,
+        "bulk_price": 14.0,
         "weight": 0.01,
         "roll_keep": true
     },
     "Sanctified Fossil": {
-        "price": 10.0,
-        "bulk_price": 10.0,
+        "price": 13.0,
+        "bulk_price": 26.7,
         "weight": 0.01,
         "roll_keep": true
     },
     "Perfect Fossil": {
-        "price": 5.8,
-        "bulk_price": 24.4,
+        "price": 8.0,
+        "bulk_price": 15.6,
         "weight": 2.27,
         "roll_keep": true
     },
     "Shuddering Fossil": {
-        "price": 5.0,
-        "bulk_price": 7.2,
+        "price": 7.7,
+        "bulk_price": 43.0,
         "weight": 2.27,
         "roll_keep": true
     },
     "Corroded Fossil": {
-        "price": 3.7,
-        "bulk_price": 5.0,
+        "price": 4.0,
+        "bulk_price": 5.3,
         "weight": 2.27,
         "roll_keep": true
     },
     "Prismatic Fossil": {
-        "price": 2.0,
-        "bulk_price": 3.2,
+        "price": 3.0,
+        "bulk_price": 2.9,
         "weight": 2.27,
         "roll_keep": true
     },
     "Serrated Fossil": {
         "price": 3.0,
-        "bulk_price": 5.4,
+        "bulk_price": 3.0,
         "weight": 2.27,
         "roll_keep": true
     },
     "Deft Fossil": {
-        "price": 3.0,
-        "bulk_price": 9.2,
+        "price": 5.0,
+        "bulk_price": 42.2,
         "weight": 2.27,
         "roll_keep": true
     },
     "Fundamental Fossil": {
-        "price": 2.0,
-        "bulk_price": 15.7,
+        "price": 3.0,
+        "bulk_price": 3.7,
         "weight": 2.27,
         "roll_keep": true
     },
     "Aetheric Fossil": {
         "price": 2.0,
-        "bulk_price": 2.8,
+        "bulk_price": 4.6,
         "weight": 2.27,
         "roll_keep": true
     },
     "Bound Fossil": {
-        "price": 2.4,
-        "bulk_price": 3.5,
+        "price": 3.0,
+        "bulk_price": 2.9,
         "weight": 2.27,
         "roll_keep": true
     },
     "Bloodstained Fossil": {
         "price": 2.0,
-        "bulk_price": 1.0,
+        "bulk_price": 4.3,
         "weight": 0.01,
         "roll_keep": false
     },
     "Dense Fossil": {
         "price": 1.0,
-        "bulk_price": 1.6,
+        "bulk_price": 1.2,
         "weight": 10.57,
         "roll_keep": true
     },
     "Gilded Fossil": {
         "price": 1.0,
-        "bulk_price": 4.7,
+        "bulk_price": 4.8,
         "weight": 0.01,
         "roll_keep": true
     },
     "Jagged Fossil": {
         "price": 1.0,
-        "bulk_price": 1.3,
+        "bulk_price": 1.0,
         "weight": 10.57,
         "roll_keep": false
     },
     "Aberrant Fossil": {
         "price": 1.0,
-        "bulk_price": 1.2,
+        "bulk_price": 1.0,
         "weight": 10.57,
         "roll_keep": false
     },
@@ -121,31 +121,31 @@
     },
     "Pristine Fossil": {
         "price": 1.0,
-        "bulk_price": 1.1,
+        "bulk_price": 1.0,
         "weight": 10.57,
         "roll_keep": false
     },
     "Lucent Fossil": {
         "price": 1.0,
-        "bulk_price": 1.8,
+        "bulk_price": 1.0,
         "weight": 2.27,
         "roll_keep": false
     },
     "Tangled Fossil": {
         "price": 1.0,
-        "bulk_price": 1.0,
+        "bulk_price": 7.2,
         "weight": 0.01,
         "roll_keep": false
     },
     "Scorched Fossil": {
-        "price": 0.3,
+        "price": 1.0,
         "bulk_price": 0.8,
         "weight": 10.57,
         "roll_keep": false
     },
     "Frigid Fossil": {
-        "price": 0.3,
-        "bulk_price": 0.8,
+        "price": 1.0,
+        "bulk_price": 0.7,
         "weight": 10.57,
         "roll_keep": false
     }

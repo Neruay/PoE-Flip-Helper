@@ -3,8 +3,9 @@ from utils import load_json, update_json, __DATA_PATH__
 from prettytable import *
 import requests
 import json
+import argparse
 
-def parse_gem_quality_data():
+def parse_gem_quality_data() -> None:
     alt_gems = {}
     for gem in gems:
         if gems[gem]["base_item"] != None and gems[gem]["base_item"]["display_name"].split(" ")[0] not in ["Vaal", "Awakened"] and gems[gem]["base_item"]["display_name"] not in alt_gems and len(gems[gem]["static"]["quality_stats"]) > 0:
@@ -25,7 +26,7 @@ def parse_gem_quality_data():
                         alt_gems[gems[gem]["base_item"]["display_name"]]["qualities21"]["phantasmal"] = {"type": "phantasmal", "weight": quality["weight"], "price": 0, "listed": 0}
     update_json(alt_gems, "alt_gems.json", __DATA_PATH__)
 
-def get_gems_prices(alt_gems):
+def get_gems_prices(alt_gems: dict) -> None:
     for item in alt_gems:
         alt_gems[item]["qualities"]["superior"]["price"] = 1e7
         alt_gems[item]["qualities21"]["superior"]["price"] = 1e7
@@ -91,7 +92,7 @@ def get_gems_prices(alt_gems):
         if "phantasmal" in alt_gems[item]["qualities21"] and alt_gems[item]["qualities21"]["phantasmal"]["price"] == 1e7: alt_gems[item]["qualities21"]["phantasmal"]["price"] = 1
     update_json(alt_gems, "alt_gems.json", __DATA_PATH__)
 
-def find_gem_flips(alt_gems):
+def find_gem_flips(alt_gems: dict) -> list:
     profitable_flips = []
     currency = load_json("currency.json")
     active_lens_price = currency["Prime Regrading Lens"]["price"]
@@ -130,7 +131,7 @@ def find_gem_flips(alt_gems):
     profitable_flips.sort(key=lambda i:i[4], reverse=True)
     return (profitable_flips)
 
-def generate_flip_table(profitable_flips):
+def generate_flip_table(profitable_flips: list) -> None:
     flip_table = PrettyTable(hrules=ALL, padding_width=1)
     flip_table.set_style(SINGLE_BORDER)
     flip_table.field_names = ["START", "OUTCOME 1", "OUTCOME 2", "OUTCOME 3", "EXPECTED VALUE"]
@@ -138,7 +139,7 @@ def generate_flip_table(profitable_flips):
         flip_table.add_row(flip)
     print(flip_table)
 
-def find_gems_for_leveling(alt_gems):
+def find_gems_for_leveling(alt_gems: dict) -> list:
     price_differences = []
     for gem in alt_gems:
         for quality in alt_gems[gem]["qualities"]:
@@ -155,14 +156,32 @@ def find_gems_for_leveling(alt_gems):
             price_differences.append(current_diff)
     return price_differences
 
-def generate_gems_leveling_table(price_differences):
+def generate_gems_leveling_table(price_differences: list) -> None:
     level_table = PrettyTable(hrules=ALL, padding_width=1)
     level_table.set_style(SINGLE_BORDER)
     level_table.field_names = ["GEM", "BASE PRICE", "21/20 PRICE", "DIFFERENCE", "LISTED ON MARKET"]
     for diff in price_differences:
         level_table.add_row(diff)
     print(level_table.get_string(sortby="DIFFERENCE", reversesort=True, end=20))
-parse_gem_quality_data()
-get_gems_prices(load_json("alt_gems.json", __DATA_PATH__))
-#generate_flip_table(find_gem_flips(load_json("alt_gems.json", __DATA_PATH__)))
-generate_gems_leveling_table(find_gems_for_leveling(load_json("alt_gems.json", __DATA_PATH__)))
+
+def run(*args) -> None:
+    match args[0]:
+        case "parse_gems": parse_gem_quality_data()
+        case "get_gems_prices": get_gems_prices(load_json("alt_gems.json", __DATA_PATH__))
+        case "generate_flip_table": generate_flip_table(find_gem_flips(load_json("alt_gems.json", __DATA_PATH__)))
+        case "generate_gems_leveling_table": generate_gems_leveling_table(find_gems_for_leveling(load_json("alt_gems.json", __DATA_PATH__)))
+
+if __name__ == "__main__":
+    import sys
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "mode",
+    )
+    parser.add_argument(
+        "item_type",
+        nargs="?",
+        default=0
+    )
+    args = parser.parse_args()
+    arg_list = [args.mode, args.item_type] if args.item_type else [args.mode]
+    sys.exit(run(*arg_list))
