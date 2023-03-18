@@ -12,6 +12,7 @@ python run.py -f feature -m mode -t item_type
 - `stack_change`
 - `gems`
 - `tft`
+<!-- -->
 `-m --mode` - calls the certain function of the selected core feature. Available options for each feature are described in their respective sections.\
 \
 `-t --item_type` - specifies the item type, required by some features. Available item types are:
